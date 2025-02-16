@@ -1,0 +1,93 @@
+/* style.css */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0; /* Light gray background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #333; /* Dark text color for better contrast */
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center the content */
+    width: 400px; /* Adjust width as needed */
+}
+
+h1 {
+    color: #007bff; /* Blue heading */
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="number"], select {
+    width: calc(100% - 10px); /* Full width input/select */
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; /* Include padding in width */
+}
+
+button {
+    background-color: #007bff; /* Blue button */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Sliding Panel Styles */
+.sliding-panel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 300px; /* Adjust width as needed */
+    height: 100%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transform: translateX(-100%); /* Initially hidden */
+    transition: transform 0.3s ease;
+    overflow-y: auto; /* Add scroll if content overflows */
+}
+
+.sliding-panel.open {
+    transform: translateX(0); /* Show panel when open class is added */
+}
+
+#closePanel {
+    margin-top: 10px;
+    background-color: #dc3545; /* Red close button */
+}
+
+#closePanel:hover {
+    background-color: #c12a36;
+}
+
+#openPanel {
+    margin-top: 20px;
+}
